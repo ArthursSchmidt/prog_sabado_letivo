@@ -1,4 +1,4 @@
-<meta charset="UTF-8"
+<meta charset="UTF-8">
 <script>
     /*PROBLEMA: CALCULAR DESCONTO
     Crie um programa que pergunte o preço de um produto.
@@ -8,11 +8,12 @@
     */
 
     //ENTRADA
-
+    const preco = Number((prompt(`qual era o preço do produto?`)).replace("," , "."));
 
     //PROCESSAMENTO
-
+    const desconto = (preco - (preco * 10) / 100).toFixed(2);
 
     //SAÍDA
+    alert((`O preço com desconto é: R$ ${desconto}`).replace("." , ","));
 
 </script>
