@@ -1,4 +1,4 @@
-<meta charset="UTF-8"
+<meta charset="UTF-8">
 <script>
     /*PROBLEMA: POSITIVO OU NEGATIVO
     Desenvolva um programa que peça um número e verifique se ele é positivo,
@@ -6,11 +6,16 @@
     */
 
     //ENTRADA
-
+    const numero = Number((prompt(`escreva um número positivo ou negativo, com vírgula ou sem vírgula.`)).replace("," , "."));
 
     //PROCESSAMENTO
 
 
     //SAÍDA
+    isNaN(numero)  ? alert(`caractere inválido`) :
+    (numero < 0)   ? alert(`o número é negativo`) :
+    (numero > 0)   ? alert(`o número é positivo`) :
+                     alert(`o número é igual a zero`);
+    
 
 </script>
