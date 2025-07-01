@@ -1,4 +1,4 @@
-<meta charset="UTF-8"
+<meta charset="UTF-8">
 <script>
     /*PROBLEMA: CALCULAR ÁREA DO RETÂNGULO
     Crie um programa que peça ao usuário a altura e a largura de um retângulo.
@@ -6,11 +6,13 @@
     */
 
     //ENTRADA
-
+    const altura = Number((prompt(`Qual a altura do retângulo`)).replace("," , "."));
+    const largura = Number((prompt(`Qual a largura do retângulo?`)).replace("," , "."));
 
     //PROCESSAMENTO
-
+    const area = (altura * largura).toFixed(2);
 
     //SAÍDA
+    alert(`a área do retângulo é de ${area}`);
 
 </script>
