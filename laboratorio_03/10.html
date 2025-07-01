@@ -1,4 +1,4 @@
-<meta charset="UTF-8"
+<meta charset="UTF-8">
 <script>
     /*PROBLEMA: CALCULAR IMC SIMPLES
     Crie um programa que peça o peso (em kg) e a altura (em metros) do usuário.
@@ -8,11 +8,13 @@
     */
 
     //ENTRADA
-
+    const peso = Number((prompt(`Qual o seu peso em Kg?`)).replace("," , "."));
+    const altura = Number((prompt(`Qual a sua altura?`)).replace("," , "."));
 
     //PROCESSAMENTO
+    const imc = (peso / (altura * altura)).replace("," , ".");
 
-
-    //SAÍDA
+    //SAÍDA 
+    (imc === 18.5) ? alert(`Você está abaixo de peso.`) : alert(``)
 
 </script>
